@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regex101: build, test, and debug regex</title>
+    <link rel="stylesheet" type="text/css" href="static/styles.css">
+</head>
+<body>
+    {% if request.path == "/" or request.path == '/results' %}
+    <div class="container-regex">
+        <h1>Regular Expression Matcher</h1>
+        <form method="post" action="/results">
+            <label for="test_string">Test String</label><br>
+            <textarea id="test_string" name="test_string" rows="6" cols="50" placeholder="Insert your test string here..."></textarea><br><br>
+            
+            <label for="regex">Regular Expression</label><br>
+            <input type="text" id="regex" name="regex" placeholder="Insert your regular expression here..."><br><br>
+            
+            <input type="submit" value="Match">
+        </form>
+
+        <div class="matched-info">
+            <h2>Matched Information</h2>
+            {% if matches %}
+                <ul>
+                {% for match in matches %}
+                    <li>{{ match }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+
+    {% if request.path == '/validate-email' %}
+    <div class="container-email">
+        <h1>Email Validation</h1>
+        <div class="email-validation">
+            <form method="post" action="/validate-email">
+                <label for="email">Enter Email Address:</label><br>
+                <input type="text" id="email" name="email" placeholder="Enter email address..."><br><br>
+                <input type="submit" value="Validate Email">
+            </form>
+            {% if email_result %}
+                <p>{{ email_result }}</p>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+</body>
+</html>
