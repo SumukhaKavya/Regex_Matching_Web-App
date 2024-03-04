@@ -36,14 +36,16 @@ Then input an email address and click "Validate Email".
 ## Output
 
 ### Regex Matcher
-![Regex Matcher](Output/output1.JPG)
+![Regex Matcher](https://github.com/SumukhaKavya/Regex_Matching_Web-App/blob/main/Output/output1.JPG)
 
 ### Email Validation
-![Email Validation - Valid Email](Output/output2.JPG)
-![Email Validation - Valid Email](Output/output3.JPG)
+![Email Validation - Valid Email](https://github.com/SumukhaKavya/Regex_Matching_Web-App/blob/main/Output/output2.JPG)
 
-![Email Validation - Invalid Email](Output/output4.JPG)
-![Email Validation - Invalid Email](Output/output5.JPG)
+![Email Validation - Valid Email](https://github.com/SumukhaKavya/Regex_Matching_Web-App/blob/main/Output/output3.JPG)
+
+![Email Validation - Invalid Email](https://github.com/SumukhaKavya/Regex_Matching_Web-App/blob/main/Output/output4.JPG)
+
+![Email Validation - Invalid Email](https://github.com/SumukhaKavya/Regex_Matching_Web-App/blob/main/Output/output5.JPG)
 
 ## Contributing
 
