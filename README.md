@@ -36,6 +36,8 @@ Then input an email address and click "Validate Email".
 ## Output
 
 ### Regex Matcher
+![Regex Matcher](https://github.com/SumukhaKavya/Regex_Matching_Web-App/blob/main/Output/main_page.JPG)
+
 ![Regex Matcher](https://github.com/SumukhaKavya/Regex_Matching_Web-App/blob/main/Output/output1.JPG)
 
 ### Email Validation
